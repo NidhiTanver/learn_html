@@ -1,0 +1,19 @@
+h6 {
+    color:brown;
+}
+
+#idSelector {
+    color: rgba(255, 105, 180, 0.63)
+}
+
+.classSelector {
+    color: rgb(255, 0, 0);
+}
+
+div aside #descendantSelector {
+    color: blue
+}
+
+* {
+    border: 3px solid green
+}

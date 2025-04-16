@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Property</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        /* open google fonts website and select font family with their link and css and add that css class into html tag just like dancing script*/
+      .dancing-script {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400px;
+        font-style: normal;
+      }
+      #box1 {
+        text-align: right;
+        text-decoration: overline;
+        background-color: yellowgreen;
+        height: 200px;
+        width: 200px;
+      }
+      #box2 {
+        text-align: left;
+        text-decoration: underline;
+        background-color: burlywood;
+        height: 200px;
+        width: 200px;
+      }
+      #box3 {
+        text-align: center;
+        text-decoration: line-through;
+        text-decoration-color: brown;
+        text-decoration-style: dashed;
+        background-color: rebeccapurple;
+        height: 200px;
+        width: 200px;
+      }
+
+      /*text-transform: lowercase, uppercase, capitalize, none*/
+      #text_transform {
+        text-transform: uppercase;
+      }
+
+      #lowercase {
+        text-transform: lowercase;
+      }
+
+      #line_height {
+        line-height: 45px;
+        font-weight: bold; /*400-900*/
+        font-style: italic; /*normal, italic, oblique*/
+      }
+
+      /*font-family*/
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="box1">Box1</div>
+      <div id="box2">Box2</div>
+      <div id="box3">Box3 text-decoraytion-style</div>
+
+      <div id="text_transform">Text-Transform Box1</div>
+      <div id="lowercase">TEXT TRANSFORM INTO LOWERCASE</div>
+
+      <div id="line_height" class="dancing-script">
+        Box3 Line Height Property Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Alias sed nemo, aspernatur non omnis voluptatum
+        doloremque dignissimos illum corrupti beatae ratione, fugit fugiat
+        cupiditate debitis perferendis. Ea natus voluptatibus architecto!
+      </div>
+    </main>
+  </body>
+</html>

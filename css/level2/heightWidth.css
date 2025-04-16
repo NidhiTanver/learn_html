@@ -1,0 +1,55 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first, .second, .third {
+    height: 100px;
+    width: 100px;
+}
+
+.first {
+    background-color: red;
+}
+
+.second {
+    background-color: green;
+}
+
+.third {
+    background-color: blue;
+}
+
+#box1 {
+    height: 200px;
+    width: 200px;
+    background-image: url("../../assets/images/myntra-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#practice {
+    background-color: rgba(50, 50, 50, 0.3);
+    color: rgba(173, 233, 231, 0.966)
+}
+
+.main_content {
+    background-color:blanchedalmond;
+    height: 1000px;
+}
+
+#img_practice {
+    
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    /* background-color: green;
+    background-image: url("../../assets/images/myntra_text.png");
+    background-repeat: no-repeat;
+    background-position: right; */
+    
+    background: green url("../../assets/images/myntra_text.png") no-repeat right;
+}
