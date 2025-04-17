@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h4 {
+        color: chartreuse;
+      }
+
+      .posiiton {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(122, 154, 214);
+        margin: 10px;
+        border: 4px dotted whitesmoke;
+        font-size: 20px;
+        color: white;
+      }
+
+      #static {
+        position: static;
+      }
+
+      #relative {
+        position: relative;
+        top: 20px;
+        left: 20px;
+      }
+
+      #absolute {
+        position: absolute;
+        background-color: green;
+      }
+
+      #fixed {
+        position: fixed;
+        top: 50px;
+        left: 150px;
+      }
+
+      #z_index {
+        background-color: rgb(160, 59, 59);
+        z-index: 2;
+      }
+
+      #z_index2 {
+        background-color: blueviolet;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h4>Position: static, relative, absolute, fixed</h4>
+
+      <div class="posiiton" id="static">Position: static</div>
+
+      <div class="posiiton" id="relative">Position: relative</div>
+
+      <div class="posiiton" id="absolute">Position: absolute</div>
+
+      <div class="posiiton" id="fixed">Position: fixed</div>
+
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton">Position: fixed</div>
+      <div class="posiiton" id="z_index">Position: fixed</div>
+      <div class="posiiton" id="z_index2">Position: fixed</div>
+    </main>
+  </body>
+</html>

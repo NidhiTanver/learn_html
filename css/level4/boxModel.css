@@ -9,6 +9,7 @@
     width: 50px;
     padding: 5px 10px 15px 19px;
     margin: 10px 10px 50px 10px;
+    box-sizing: border-box; 
 }
 
 .padded2 {
@@ -17,4 +18,20 @@
     width: 50px;
     padding: 5px 10px 15px 19px;
     margin: 10px 3px 16px 23;
+    box-sizing: border-box; 
+    border: 4px solid
+}
+
+.borderClass {
+    height: 100px;
+    width: 100px;
+    border: 3px dashed red;
+    background-color: yellowgreen;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/*(box-sizing: border box) will not increase the height and width of box due to padding and border width, it will be same ht and width as we defined*/
+
+.borderBox{
+    box-sizing: border-box; 
 }

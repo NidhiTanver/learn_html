@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Units</title>
+    <style>
+        .firstDiv {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+            border: 4px dotted whitesmoke;
+            font-size: 10px;
+        }
+        .secondDiv {
+            /* font-size: 20px;  */
+            /* 2 times the font size of the parent element */
+            width: 50%;
+            height: 30%;
+            background-color: lightgreen;
+            margin: 10px;
+            border: 4px dotted whitesmoke;
+        }
+        .thirdDiv {
+            font-size: 2rem; /* 2 times the font size of the parent element */
+            width: 50%;
+            height: 30%;
+            background-color: lightcoral;
+            margin: 10px;
+            border: 4px dotted whitesmoke;
+        }
+        .fourthDiv {
+            width: 50vw;
+            height: 30vh;
+            background-color: lightseagreen;
+        }
+        * {
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p style="color: brown;">Root of element (rem)
+            Parent Element (em) => 2em , 2*parent element
+            vh=> viewport height => 2vh => 2% of viewport height
+            vw=> viewport width => 2vw => 2% of viewport width</p>
+
+        <article style="color: blueviolet; font-weight: bold;">%()percentage, em, rem works for font-size but vh and vw (viewport height viewport width) works for height and width</article>
+
+        <div class="firstDiv">
+            Outer Div
+            <div class="secondDiv">Inner Div
+                <div class="thirdDiv">hey third div
+                    <div class="fourthDiv">Fourth Div</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
