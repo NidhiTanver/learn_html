@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trasition</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(152, 172, 112);
+    }
+    ul li {
+        color:rgb(145, 15, 58)
+    }
+    .btn {
+        height: 30px;
+        width: 120px;
+        background-color: green;
+        color: whitesmoke;
+        font-size: 20px;
+        border: 3px solid black;
+        border-radius: 10px;
+        /* transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: steps(3);
+        transition-delay: 0s; */
+        transition: all 1s steps(3) 1s
+    }
+
+    .btn:hover {
+        height: 50px;
+        width: 140px;
+        background-color: rgb(88, 4, 18);
+    }
+
+    .btn:active {
+        height: 100px;
+        width: 160px;
+        background-color: rgb(18, 151, 118);
+    }
+    </style>
+</head>
+<body>
+    <h4>CSS Transition is a property that enables smooth animation between changes in CSS property values.</h4>
+    <ul>
+        <li>transition-property: defines which css property will transition.</li>
+        <li>trasition-duration: Sets how long the transition lasts.</li>
+        <li>transition-timing-function: control the speed curve of transition.</li>
+        <li>transition-delay: specify delay before the transition start</li>
+    </ul>
+    <button class="btn">Click Me</button>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+
+        #rotate {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border: 2px solid red;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            color: whitesmoke;
+        }
+
+        #rotate:hover {
+            /* transform: rotate(45deg);
+            transform: rotateX(45deg); */
+            transform: rotatey(45deg);
+            transition: all 1s ease-in 1s;
+        }
+        
+        #scale {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border: 2px solid red;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            color: whitesmoke;
+            
+        }
+
+        #scale:hover {
+            transform: scaleY(2)
+        }
+
+        #translate {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border: 2px solid red;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            color: whitesmoke;
+            
+        }
+
+        #translate:hover {
+            /* transform: translate(50px); */
+            /* transform: translate(50px, 50px); */
+            transform: translate(-50px);
+            /* transform: translate(-50px, -50px); */
+        }
+
+        #skew {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border: 2px solid red;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            color: whitesmoke;
+            
+        }
+
+        #skew:hover {
+            transform: skewY(45deg)
+        }
+       
+    </style>
+</head>
+<body>
+    CSS Transorm allow modification of an element shape and position.
+    It can perform operation like rotate, scale, skew and translate.
+    Does not effect the layout of surrounding elements.
+    Used to create visual effects.
+
+
+    <div class="rotateDiv">
+        <ul>
+            Rotate
+            <li>Rotate an element around a fixed point.</li>
+            <li>Defined using the rotate() function withing the transform property.</li>
+            <li>Default rotation point is the element center.</li>
+            <li>rotatex('angel') and rotatey('angel') doesn't decrease the size of element, it just hide the height, just like a pen: if we will move the pen on x and y axes it will hide from user, but size will be same</li>
+            <div id="rotate" class="box">Rotate (45deg)</div>
+        </ul>
+    </div>
+
+    <div class="scaleDiv">
+        <ul>
+            Scale
+            <li>Scale will increase and decrease an element's size.</li>
+            <li>scale(factor) => factor: (2 times)twice, 4 times, 5 times etc...</li>
+            <div id="scale" class="box">scale(factor)</div>
+        </ul>
+    </div>
+
+    <div class="translateDiv">
+        <ul>
+            Translate
+            <li>Scale will shift an element's from it's position .</li>
+            <li>translate(value1 px=) OR translate(value1 px, value2 px) OR translate(-value1 px, -value2 px)</li>
+            <li>translate can take both positive and negative values.</li>
+            <div id="translate" class="box">translate(value in px)</div>
+        </ul>
+    </div>
+
+    <div class="skeweDiv">
+        <ul>
+            Skew
+            <li>Skew will pichkate hai any element's on it's position .</li>
+            <li>Skew(degree)</li>
+            <div id="skew" class="box">skew(deg)</div>
+        </ul>
+    </div>
+</body>
+</html>

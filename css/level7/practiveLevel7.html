@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 7 Practice Set</title>
+    <style>
+        .progressContainer {
+            height: 25px;
+            width: 90%;
+            background-color: aliceblue;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        .progressBar {
+            background-color: brown;
+            height: 100%;
+            border-radius: 10px;
+            animation: progress 3s;
+        }
+
+        @keyframes progress {
+            0% {width: 0%;}
+            50% {width: 50%;}
+            90% {width: 95%;}
+            /* 95% {width: 50%} */
+            100% {width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="progressContainer">
+        <div class="progressBar"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+    <style>
+        header {
+            text-align: center;
+        }
+
+        .container {
+            height: 450px;
+            width: 50%;
+            border: 2px solid black;
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* justify-content:space-evenly; */
+            flex-wrap: wrap;
+            align-items:center;
+            background-color:rgb(215, 196, 233);
+           
+        }
+        .box {
+            height: 80px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 5px;
+           
+        }
+
+        #box1 {
+            background-color: aqua;;
+        }
+
+        #box2 {
+            background-color: rgb(162, 130, 238);
+        }
+
+        #box3 {
+            background-color: rgb(208, 255, 0);;
+        }
+
+        #box4 {
+            background-color: rgb(255, 0, 119);;
+        }
+    </style>
+</head>
+<body>
+    <header>Flex container</header>
+    <main>
+        <!-- Flexbox direction => display: flex then flex-direction:  row, row-reverse, coloumn, coloumn-reverse.......... when box (children size will increase then they will start shrink automatically, that's why we can use these for responsive websites) -->
+        <div class="container">
+            <div id="box1" class="box">Item 1</div>
+            <div id="box2" class="box">Item2</div>
+            <div id="box3" class="box">Item3</div>
+            
+            
+        </div>
+
+        <!-- flexBox Container (justify content)
+         use of justify=>  when items are too short then they will not look good so with justify content we can add good space so that it looks good (justify-content:  flex-start, flex-end, space-between, space-around, space-evenly, center )-->
+        <div class="flexBoxContainer"></div>
+
+
+        <!-- flex-wrap property   (no-wrap(default), wrap, wrap-reverse, )Firslty items were taking more space into container.
+         if container size is big, but if more divs added then space between divs will decreases so that more divs can come. Once container filled with all div then it will come outside the container. -->
+
+        <!-- Flexbox container (align items) We have two axes 1. main axes (horizontal) 2. cross axes (vertical).
+         If i want to handle div with main axes direction then i will use justify-content, but if i want to set data with cross axes then i will use align-items property. By default direction will be left to right.
+         
+        but mainly for align items we need to set 3 property (1.display:flex  2. flex-direction:...3. align-items:...) -->
+    </main>
+</body>
+</html>

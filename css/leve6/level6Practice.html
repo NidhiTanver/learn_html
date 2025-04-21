@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level6</title>
+    <link rel="stylesheet" href="level6Practice.css">
+    <style>
+       
+        .imageContainer {
+            height: 150px;
+            border: 3px solid maroon;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            /* align-items: center; */
+        }
+
+        #box_container{
+            margin-top: 5px;
+            border: 2px solid maroon;
+            height: 120px;
+            /* width: 200px; */
+            display: flex;
+            justify-content: space-around;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            margin: 5px;
+            border: 2px solid maroon;
+            flex-shrink: 1;
+        }
+
+        #box2 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        #mediaBox {
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            border: 2px solid black;
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 400px) {
+            #mediaBox{
+                background-color: red;;
+            }
+        }
+        @media screen and (min-width: 400px) {
+            #mediaBox{
+                background-color: blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home">Home</a>
+            <a href="product">Product</a>
+            <a href="contact">Contact Us</a>
+            <a href="support">Support</a>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="imageContainer">
+            <img src="../../assets/images/bharat.jpeg" alt="Baharat">
+        </div>
+
+        <div id="box_container">
+            <div id="box1" class="box">Box1</div>
+            <div id="box2" class="box">Box2</div>
+            <div id="box3" class="box">Box3</div>
+        </div>
+
+        <div id="mediaBox">Media Box</div>
+    </main>
+</body>
+</html>

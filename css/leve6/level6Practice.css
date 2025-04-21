@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+header {
+    width: 100%;
+    background-color: rgb(4, 80, 4);
+    position: fixed;
+    top: 0;
+}
+
+nav{
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+   
+}
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5px;
+}

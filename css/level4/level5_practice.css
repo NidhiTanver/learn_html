@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    height: 50px;
+    background-color: green;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+}
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    /* margin: 55px; */
+    padding: 10px;
+}
+#taskOne {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border: 3px dotted rgb(105, 209, 216);
+    border-radius: 50%;
+}
+
+.container {
+    border: 3px solid green;
+    margin: 10px
+}
+
+.taskTwo {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(105, 209, 216);
+    box-sizing: border-box;
+    display: inline-block;
+    border: 3px dashed green
+}
+
+#firstDiv {
+    z-index: 2;
+    left: 100px;
+}
+
+#thirdDiv {
+    position: fixed;
+    right: 10px;
+}
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: green;
+    position: fixed;
+}
