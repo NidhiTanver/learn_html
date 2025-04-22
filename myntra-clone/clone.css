@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+    background-color: beige;
+}
+
+.logo {
+    height: 36px;
+    width: 53px;
+    
+}
+
+.logoContainer {
+    margin-left: 56px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    /* position: fixed;
+    top: 10px; */
+}
+
+.iconContainer {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
