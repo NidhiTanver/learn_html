@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Query Selector</title>
+    <script
+      src="https://kit.fontawesome.com/caa5934790.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .submit_btn {
+        color: black;
+      }
+
+      #click {
+        border-radius: 10px;
+        background-color: greenyellow;
+        border: none;
+        align-items: center;
+        padding: 5px;
+        width: 80px;
+        height: 25px;
+        margin-right: 10px;
+      }
+
+      .wishlistcontainer {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 23px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: rgb(221, 214, 214);
+        padding: 5px;
+      }
+
+      .heart_icon {
+        color: red;
+      }
+
+      #view {
+        border: none;
+        background: transparent;
+        text-transform: uppercase;
+        margin-right: 10px;
+      }
+
+      .mainContainer {
+        display: flex;
+        width: 250px;
+        align-items: center;
+        /* justify-content: space-evenly; */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="mainContainer">
+        <button id="click" class="submit_btn">Add to bag</button>
+        <div class="wishlistcontainer">
+          <span><i class="fa-solid fa-heart heart_icon"></i></span>
+          <button id="view" class="submit_btn">Wishlist</button>
+        </div>
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nam
+        labore facere hic laborum similique vero iusto ullam voluptate magni?
+      </p>
+    </main>
+  </body>
+</html>
